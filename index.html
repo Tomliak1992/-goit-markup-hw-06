@@ -64,24 +64,37 @@
                         <div class="form-field">
                             <label class="form-label" for="name">Имя</label>
                             <input class="form-input" type="text" name="name" id="name" />
+                            <svg class="form-icon" width="12" height="12">
+                                <use href="./images/icons.svg#icon-icon-person"></use>
+                            </svg>
                         </div>
                         <div class="form-field">
                             <label class="form-label" for="tel">Телефон</label>
                             <input class="form-input" type="tel" name="tel" id="tel" />
+                            <svg class="form-icon" width="13" height="13">
+                                <use href="./images/icons.svg#icon-phon-black"></use>
+                            </svg>
                         </div>
                         <div class="form-field">
                             <label class="form-label" for="email">Пошта</label>
                             <input class="form-input" tupe="email" name="email" id="email" />
+                            <svg class="form-icon" width="15" height="12">
+                                <use href="./images/icons.svg#icon-mail-black"></use>
+                            </svg>
                         </div>
                         <div class="form-field">
                             <label class="form-label" for="comment">Комментарий</label>
-                            <textarea name="comment" rows="10" id="comments" placeholder="введите текст"></textarea>
+                            <textarea name="comment" rows="8" id="comment" placeholder="Введите текст"></textarea>
                         </div>                              
                         <div class="form-field">
-                            <input class="form-input" type="checkbox" name="" value="coment" id="coment" />
-                            <label class="form-label" for="coment">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                            <label class="confidential-label" for="confidential">
+                                <input class="checkbox" type="checkbox" name="checkbox" value="coment" id="confidential" />
+                                Соглашаюсь с рассылкой и принимаю
+                                <span class="checkbox-icon"></span>
+                                <a href="#">Условия договора</a>
+                            </label>
                         </div>
-                        <button class="form-button" type="submit">отправить</button>
+                        <button class="form-button" type="submit">Отправить</button>
                     </form>
                     <button class="modal-close" data-modal-close>
                         <svg class="modal-close-icon" width=11px height=11px>
@@ -426,6 +439,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-form-cection">
+                <form action="">
+                    <h2 class="footer-form-title">подпишитесь на рассылку</h2>
+                    <input class="footer-form-input" tupe="email" name="email" id="email" placeholder="E-mail" />
+                        <button class="footer-button" type="submit">
+                        <div class="footer-button-content">
+                            <p>Подписаться</p>
+                            <svg class="footer-button-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                </form>
             </div>
         </div>
     </footer>

@@ -215,8 +215,7 @@ p {
 }
 
 .footer-social-link {
-  content: '';
-  width: 44px;
+    width: 44px;
   height: 44px;
   margin: 0;
   padding: 12px;
@@ -233,6 +232,72 @@ p {
 .footer-social-link:focus {
   background-color: var(--accent-color);
 }
+
+.footer-form-cection {
+  position: relative;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+
+}
+.footer-form-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--wright-color);
+}
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 29px;
+  cursor: pointer;
+  border: none;
+  
+}
+.footer-button-content {
+  position: relative;
+  width: 143px;
+  height: 30px;
+
+}
+.footer-button-content p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--wright-color);
+  position: absolute;
+  left: 0;
+  align-content: center;
+}
+
+.footer-button-icon {
+  position: absolute;
+  right: 0;
+  fill: var(--wright-color);
+}
+
 /*hero*/
 .hero {
   text-align: center;
@@ -622,43 +687,123 @@ p {
 
 /* form */
 .form-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
   margin-bottom: 12px;
 }
 .form {
   width: 528px;
-  outline: 1px solid tomato;
+  height: 581px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 40px;
 }
 
 .form-field {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
+.form-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  
+}
 .form-label {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
 }
 
 .form-field input::placeholder {
-  color: #ccc;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-input {
-  margin: 0;
-  padding: 10px;
-  border: 1px solid #2a2a2a;
-  border-radius: 3px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea {
   resize: none;
-  border: 1px solid #2a2a2a;
-  border-radius: 3px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding: 10px;
+  color: var(--title-text-color);
+  margin-bottom: 20px;
+}
+textarea:focus {
+  outline: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
-.form-field input[type='checkbox'] {
+.form-button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--wright-color);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+.confidential-label {
+  position: relative;
+  display: inline-block;
+  outline: 1px solid #212121;
+  margin-bottom: 30px;
+  
+}
+.checkbox:checked + .checkbox-icon {
+  background-image: url("/images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.checkbox-icon {
+  position: absolute;
+  left: 15px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+
+
+
