@@ -703,10 +703,12 @@ p {
 
 .form-field {
   position: relative;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
 .form-icon {
   position: absolute;
@@ -746,7 +748,7 @@ textarea {
   letter-spacing: 0.01em;
   padding: 10px;
   color: var(--title-text-color);
-  margin-bottom: 20px;
+
 }
 textarea:focus {
   outline: 1px solid var(--accent-color);
@@ -782,11 +784,17 @@ textarea:focus {
 
 }
 .confidential-label {
-  position: relative;
-  display: inline-block;
-  outline: 1px solid #212121;
+ 
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
   
+}
+
+.confidential-label a {
+  margin-left: 5px;
+  text-decoration: revert;
+  color: var(--accent-color)
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url("/images/icon-check.svg");
@@ -795,8 +803,8 @@ textarea:focus {
   border-color: var(--accent-color);
 }
 .checkbox-icon {
-  position: absolute;
-  left: 15px;
+  margin-left: 15px;
+  margin-right: 9px;
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -804,6 +812,11 @@ textarea:focus {
   border-radius: 4px;
 }
 
-
+.checkbox-text {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
 
 
