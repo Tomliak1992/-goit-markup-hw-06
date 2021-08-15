@@ -260,6 +260,12 @@ p {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+.footer-form-input:focus {
+  border: 1px solid var(--wright-color);
+  outline: none;
+  color: var(--wright-color);
+
+}
 
 .footer-button {
   position: absolute;
